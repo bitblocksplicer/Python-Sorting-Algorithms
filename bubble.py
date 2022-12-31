@@ -14,6 +14,11 @@ for i in range(len(a)):
         if a[-(j)] < a[-(j+1)]:
             #create a temporary list
             temp = []
+            # ---
+            # You can either swap two items, by simply:
+            # x, y = a.index(-j), a.index(-(j+1))
+            # a[x], a[y] = a[y], a[x]
+            # ---
             #define the current element
             currentelement = a[-(j)]
             #define the new element
